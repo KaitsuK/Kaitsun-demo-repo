@@ -1,0 +1,19 @@
+@(message: String, id: Long, kisu: Form[Cat])(implicit messages: Messages)
+
+@import helper._
+
+@main(message) {
+    <h2>@message</h2>
+    @form(routes.Application.updateCat(id)) {
+  @*      @inputText(id), '_label -> "Id", 'readonly -> "readonly")     *@
+        @inputText(kisu("name"), '_label -> "Cat's name", '_help -> "")
+        @inputText(kisu("color"), '_label -> "Cat's color", '_help -> "")
+        @inputText(kisu("race"), '_label -> "Cat's race", '_help -> "")
+        @inputText(kisu("gender"), '_label -> "Cat's gender", '_help -> "")
+        <input type="submit" value="Save">
+    }
+    <p>
+    @form(routes.Application.cats()) {
+        <input type="submit" value="Cancel">
+    }
+}

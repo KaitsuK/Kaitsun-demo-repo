@@ -1,0 +1,18 @@
+@(message: String, kisu: Form[Cat])(implicit messages: Messages)
+
+@import helper._
+
+@main(message) {
+    <h2>@message</h2>
+    @form(routes.Application.saveCat()) {
+        @inputText(kisu("name"), '_label -> "Cat's name", '_help -> "")
+        @inputText(kisu("color"), '_label -> "Cat's color", '_help -> "")
+        @inputText(kisu("race"), '_label -> "Cat's race", '_help -> "")
+        @inputText(kisu("gender"), '_label -> "Cat's gender", '_help -> "")
+        <input type="submit" value="Add a cat">
+    }
+    <p>
+    @form(routes.Application.cats()) {
+        <input type="submit" value="Cancel">
+    }
+}

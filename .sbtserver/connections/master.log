@@ -1,0 +1,7 @@
+New log file opened at Tue Aug 04 17:14:27 EEST 2015 by 4858@Kais-Mac-mini.Elisa
+Taking next connection to: 56717
+New client attempting to connect on port: 56718-56717
+  Address = /192.168.100.22:56717
+This client on port 56718 has uuid c679595f-f181-4cdb-9886-acd02aee7906 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-c679595f-f181-4cdb-9886-acd02aee7906
+Taking next connection to: 56717
